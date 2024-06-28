@@ -1,0 +1,175 @@
+/* Definições básicas */
+:root {
+    --primary-color: #ff4500;
+    --secondary-color: #ffd700;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white; 
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: #ffc107; 
+    
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul li a.linkedin {
+    color: #007bff; 
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+section {
+    background-color: #333; 
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+
+.personagem,.arco {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    width: 90%; 
+}
+
+.personagem img,.arco img {
+    width: 250px; 
+    height: auto;
+    border-radius: 8px;
+    order: 1;
+}
+
+.descricao {
+    flex: 1;
+    margin-left: 20px; 
+}
+
+.descricao h3 {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    text-align: center;
+}
+footer section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    main {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .personagem, .arco {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .personagem img, .arco img {
+        margin: 0 0 1rem 0;
+        order: 0;
+    }
+}
+
+
+#referencias {
+    background-color: #1a1a1a; 
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    color: white; 
+}
+
+#referencias h2 {
+    margin-bottom: 10px;
+    color: var(--primary-color); 
+}
+
+#referencias ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+#referencias ul li {
+    margin: 5px 0;
+}
+
+#referencias ul li a {
+    text-decoration: none; 
+    color: var(--secondary-color); 
+}
+
+#referencias ul li a:hover {
+    text-decoration: underline; /
+}
